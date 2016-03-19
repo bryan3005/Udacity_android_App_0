@@ -1,7 +1,7 @@
 package com.bryanmaruani.myappportfolio;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -37,13 +37,13 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void createToast(String name){
+    private void createToast(String name) {
         Toast.makeText(MainActivity.this, String.format(getString(R.string.button_click_toast), name), Toast.LENGTH_LONG).show();
     }
 
-    public void showToast(View v){
+    public void showToast(View v) {
         int id = v.getId();
-        switch (id){
+        switch (id) {
             case (R.id.firstAppButton):
                 createToast(getString(R.string.firstAppName));
                 break;
