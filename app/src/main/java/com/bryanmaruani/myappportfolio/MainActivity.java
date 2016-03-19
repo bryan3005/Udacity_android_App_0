@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showToast(View v) {
-        int id = v.getId();
-        switch (id) {
+        int buttonClicked = v.getId();
+        switch (buttonClicked) {
             case (R.id.firstAppButton):
                 createToast(getString(R.string.firstAppName));
                 break;
